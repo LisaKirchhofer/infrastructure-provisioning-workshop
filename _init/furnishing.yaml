@@ -15,7 +15,7 @@ spec:
   sourceRepos:
   - https://charts.jetstack.io
   - https://kubernetes.github.io/ingress-nginx
-  - ssh://git@github.com/LisaKirchhofer/infrastructure-provisioning-workshop.git
+  - https://github.com/LisaKirchhofer/infrastructure-provisioning-workshop.git
 ---
 apiVersion: argoproj.io/v1alpha1
 kind: Application
@@ -28,7 +28,7 @@ spec:
     namespace: apps
   project: default
   source:
-    repoURL: ssh://git@github.com/LisaKirchhofer/infrastructure-provisioning-workshop.git
+    repoURL: http://github.com/LisaKirchhofer/infrastructure-provisioning-workshop.git
     targetRevision: level3
     path: $CLUSTER_NAME/furnishing
   syncPolicy:
