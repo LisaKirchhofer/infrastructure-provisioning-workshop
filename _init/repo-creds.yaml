@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Secret
 metadata:
-  name: LisaKirchhofer-repos-ssh-cred
+  name: lisakirchhofer-repos-ssh-cred
   namespace: argocd
   labels:
     argocd.argoproj.io/secret-type: repo-creds
